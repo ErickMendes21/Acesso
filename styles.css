@@ -1,0 +1,210 @@
+.fun {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    align-items: start;
+    width: 100%;
+    height: 100px;
+    top: -10px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    /* background: #172770; */
+    /* overflow-y: scroll; */
+}
+
+.scrolled {
+    position: fixed;
+    background: #172770;
+}
+
+.scrolled {
+    height: 70px;
+    transition: all .5s ease-in-out;
+        .btn{
+            background: #fff;
+            color: #172770;
+            transition: all .5s ease-in-out;
+        }
+        .image{
+            width: 135px;
+            height: 30px;
+            margin: 10px;
+            transition: all .5s ease-in-out;
+        }
+        .list{
+            transform: translateY(-10px);
+            transition: all .5s ease-in-out;
+        }    
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.image {
+    margin: 22px;
+    /* margin-right: 100px; */
+    margin-left: 93px;
+    padding: 10px;
+    width: 170px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 10px 0 0 100px;
+    padding: 0;
+    transition: all .5s ease-in-out;
+}
+
+li {
+    margin: 30px; 
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-size: 0.925em;
+    font-size: 13px;
+    font-weight: 500;
+    height: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    cursor: pointer;
+}
+
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover {
+    color: #2c92ff;
+}
+
+body{
+    background: #000;  
+    margin: 0;
+    /* overflowY: "scroll"; */
+    
+}
+
+.btn {
+    background: #172770;
+    padding-top: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    margin: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #0044ff5e;
+}
+
+@media screen and (max-width:1200px) {
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        /* display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease; */
+    }
+
+    li {
+        /* margin: 15px; */
+        transform: translateX(-300px);
+    }
+
+    .item {
+        display: grid;
+    }
+
+    .fun {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(5px);
+    }
+
+    .header {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        right: 10px;
+        top: 40px; 
+        cursor: pointer;
+        box-shadow: 0 10px #fff, 0 -10px #fff;
+    }
+
+    .header::after {
+        width: 32px;
+        cursor: pointer;
+    }
+
+    .drop{
+        display: flex;
+        justify-content: end;
+        margin: 10px;
+        color: #fff;
+        transform: translateY(50px);
+    }
+
+    .image {
+        margin: 10px;
+    }
+
+    .Xcontainer{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+        width: 20px;
+        height: 30px;
+        border-radius: 1px;
+        cursor: pointer;
+        margin: -30px;
+    }
+
+    .Xcontainer::before,
+    .Xcontainer::after{
+        content: "";
+        position: absolute;
+        width: 2px; 
+        height: 100%;
+        background-color: #fff; 
+        transform-origin: 50% 50%;
+    }
+
+    .Xcontainer::before{
+        transform: rotate(45deg);
+    }
+
+    .Xcontainer::after{
+        transform: rotate(-45deg);
+    }
+}  
