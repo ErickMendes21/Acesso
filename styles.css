@@ -1,36 +1,55 @@
-/* .fun {
+.fun {
     display: flex;
     justify-content: space-evenly;
+    position: fixed;
     align-items: start;
     width: 100%;
+    height: 100px;
     top: -10px;
     color: #fff;
-    background: #172770; ---> comentado
-    overflow-y: scroll; ---> comentado
+    transition: all .5s ease-in-out;
+    /* background: #172770; */
+    /* overflow-y: scroll; */
 }
 
-.gun {
+.scrolled {
+    position: fixed;
     background: #172770;
-    color: salmon;
 }
 
-.cab {
-    background: #000;
-    color: white;
+.scrolled {
+    height: 70px;
+    transition: all .5s ease-in-out;
+        .btn{
+            background: #fff;
+            color: #172770;
+            transition: all .5s ease-in-out;
+        }
+        .image{
+            width: 135px;
+            height: 30px;
+            margin: 10px;
+            transition: all .5s ease-in-out;
+        }
+        .list{
+            transform: translateY(-10px);
+            transition: all .5s ease-in-out;
+        }    
 }
 
-::-webkit-scrollbar { ---> comentado
-    display: none;---> comentado
-}---> comentado
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 .image {
     margin: 22px;
-    margin-right: 100px; ---> comentado
+    /* margin-right: 100px; */
     margin-left: 93px;
     padding: 10px;
-    width: 155px;
+    width: 170px;
     height: 39px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .list {
@@ -39,6 +58,7 @@
     color: #fff;
     margin: 10px 0 0 100px;
     padding: 0;
+    transition: all .5s ease-in-out;
 }
 
 li {
@@ -62,7 +82,7 @@ li {
 body{
     background: #000;  
     margin: 0;
-    overflowY: "scroll"; ---> comentado
+    /* overflowY: "scroll"; */
     
 }
 
@@ -93,19 +113,19 @@ body{
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-        display: flex; ---> comentado
-        flex-direction: column;---> comentado
-        width: 100%;---> comentado
-        height: 90vh;---> comentado
-        position: absolute;---> comentado
-        top: 80px;---> comentado
-        left: -100%;---> comentado
-        opacity: 1;---> comentado
-        transition: all 0.5s ease;---> comentado
+        /* display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease; */
     }
 
     li {
-        margin: 15px; ---> comentado
+        /* margin: 15px; */
         transform: translateX(-300px);
     }
 
@@ -121,15 +141,12 @@ body{
     }
 
     .header {
-        top: 0px;
+        margin-right: 10px;
+        margin-bottom: 20px;
         width: 30px;
-        height: 15px;
-        right: 5px;
+        height: 30px;
         cursor: pointer;
-        padding-left: 0px;
-        padding-top: 13px;
         color: #fff;
-        transform: translateX(-50px);
     }
 
     .header::before {
@@ -138,18 +155,23 @@ body{
         width: 30px;
         height: 3px;
         background: #fff;
-        right: 0; 
+        right: 10px;
+        top: 40px; 
         cursor: pointer;
         box-shadow: 0 10px #fff, 0 -10px #fff;
     }
 
     .header::after {
         width: 32px;
+        cursor: pointer;
     }
 
     .drop{
+        display: flex;
+        justify-content: end;
+        margin: 10px;
         color: #fff;
-        transform: translateY(200px); ---> comentado
+        transform: translateY(50px);
     }
 
     .image {
@@ -185,4 +207,4 @@ body{
     .Xcontainer::after{
         transform: rotate(-45deg);
     }
-}   */
+}  
